@@ -11,6 +11,10 @@ const router = createRouter({
 			path: '/chorus',
 			component: () => import('../views/ChorusView.vue'),
 		},
+		{
+			path: '/event',
+			component: () => import('../views/EventView.vue'),
+		},
 	],
 })
 

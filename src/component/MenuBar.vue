@@ -5,6 +5,7 @@
 		<v-toolbar-title>
 			<v-btn href="/">Home</v-btn>
 			<v-btn href="/chorus">Choruses</v-btn>
+			<v-btn href="/event">Events</v-btn>
 		</v-toolbar-title>
 	</v-app-bar>
 </template>
