@@ -1,12 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MenuBar from '@/component/MenuBar.vue'
+</script>
 
 <template>
 	<v-app>
-		<v-app-bar flat>
-			<v-toolbar-title>
-				<v-btn href="/">Home</v-btn>
-			</v-toolbar-title>
-		</v-app-bar>
+		<menu-bar />
 		<v-container class="router">
 			<h1>Berlin Barbershop</h1>
 			<p>Welcome, dear barbershopper, to Berlin!</p>
