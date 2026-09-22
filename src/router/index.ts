@@ -15,6 +15,10 @@ const router = createRouter({
 			path: '/event',
 			component: () => import('../views/EventView.vue'),
 		},
+		{
+			path: '/bash',
+			component: () => import('../views/BashView.vue'),
+		},
 	],
 })
 

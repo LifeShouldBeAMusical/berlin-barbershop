@@ -4,6 +4,7 @@
 	<v-app-bar flat>
 		<v-toolbar-title>
 			<v-btn href="/">Home</v-btn>
+			<v-btn href="/bash">BBB 2027</v-btn>
 			<v-btn href="/chorus">Choruses</v-btn>
 			<v-btn href="/event">Events</v-btn>
 		</v-toolbar-title>
