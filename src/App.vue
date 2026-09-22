@@ -6,8 +6,7 @@ import MenuBar from '@/component/MenuBar.vue'
 	<v-app>
 		<menu-bar />
 		<v-container class="router">
-			<h1>Berlin Barbershop</h1>
-			<p>Welcome, dear barbershopper, to Berlin!</p>
+			<router-view />
 		</v-container>
 	</v-app>
 </template>
@@ -15,8 +14,5 @@ import MenuBar from '@/component/MenuBar.vue'
 <style lang="scss">
 .router {
 	margin: 4em 0 0 0;
-	h1 {
-		text-align: center;
-	}
 }
 </style>
