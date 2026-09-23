@@ -15,13 +15,9 @@ const vuetify = createVuetify({
 	components,
 	directives,
 	defaults: {
-		// global: { FontFace: 'Sofia Sans' },
+		// global: { FontFace: 'Sofia Sans' }
 	},
-	icons: {
-		defaultSet: 'mdi',
-		aliases,
-		sets: { mdi },
-	},
+	icons: { defaultSet: 'mdi', aliases, sets: { mdi } },
 	blueprint: md2,
 })
 
