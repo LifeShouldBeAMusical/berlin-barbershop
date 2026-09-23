@@ -16,9 +16,6 @@ const { t } = useI18n()
 
 <style lang="scss">
 #event-view {
-	h1 {
-		text-align: center;
-	}
 	.event-container {
 		margin: 0;
 		padding: 0;

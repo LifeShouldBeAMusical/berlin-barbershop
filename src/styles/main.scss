@@ -1,0 +1,207 @@
+@font-face {
+	font-family: 'Default Sans';
+	src: url('../assets/fonts/default-sans-book.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Default Sans';
+	src: url('../assets/fonts/default-sans-book-italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Default Sans Mono';
+	src: url('../assets/fonts/default-sans-mono-book.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--font-sans: 'Default Sans', sans-serif;
+	--font-mono: 'Default Sans Mono', monospace;
+	--page-gutter: clamp(24px, 5vw, 80px);
+	color-scheme: dark;
+	font-synthesis: none;
+}
+
+html,
+body {
+	background: #1c1c1c;
+	color: #fff;
+}
+
+body,
+.v-application {
+	font-family: var(--font-sans);
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+// A static, decorative grain layer; content stays crisp and interactive above it.
+.v-application::before {
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	content: '';
+	opacity: 0.12;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23grain)' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+	background-size: 180px 180px;
+	background-repeat: repeat;
+}
+
+.v-application__wrap {
+	z-index: 1;
+}
+
+a,
+button {
+	color: inherit;
+	font: inherit;
+}
+
+a {
+	text-underline-offset: 0.25em;
+}
+
+:focus-visible {
+	outline: 1px solid currentColor;
+	outline-offset: 5px;
+}
+
+::selection {
+	background: #fff;
+	color: #1c1c1c;
+}
+
+.site-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 24px;
+	margin-inline: var(--page-gutter);
+	padding-block: 20px;
+}
+
+.site-nav,
+.language-switcher {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: clamp(16px, 3vw, 44px);
+
+	a,
+	button {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+		text-decoration: none;
+	}
+
+	a:hover,
+	a.router-link-exact-active,
+	button:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+	}
+}
+
+.language-switcher {
+	flex-shrink: 0;
+	gap: 12px;
+
+	button {
+		justify-content: center;
+		min-width: 44px;
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		cursor: pointer;
+	}
+}
+
+.page-container.v-container {
+	width: 100%;
+	max-width: 1440px;
+	margin-inline: auto;
+	padding: clamp(64px, 10vw, 144px) var(--page-gutter) 96px;
+
+	h1,
+	h2 {
+		font-weight: 400;
+		text-wrap: balance;
+	}
+
+	h1 {
+		max-width: 18ch;
+		margin-bottom: 40px;
+		font-size: clamp(44px, 7vw, 100px);
+		line-height: 1.04;
+		letter-spacing: -0.045em;
+	}
+
+	h2 {
+		margin-bottom: 16px;
+		font-size: clamp(28px, 3vw, 40px);
+		line-height: 1.2;
+		letter-spacing: -0.025em;
+	}
+
+	p {
+		max-width: 58ch;
+		margin-bottom: 20px;
+		font-size: clamp(18px, 1.6vw, 22px);
+		line-height: 1.55;
+	}
+}
+
+#home-view p {
+	font-style: italic;
+}
+
+.chorus-container.v-container {
+	padding: 32px 0;
+}
+
+#bash-view {
+	h1 {
+		max-width: 20ch;
+		font-size: clamp(36px, 6vw, 80px);
+		line-height: 1.12;
+		letter-spacing: -0.04em;
+	}
+}
+
+.event.v-card {
+	width: 100%;
+	max-width: 560px;
+	padding: 16px;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+
+	.v-card-title {
+		font-family: var(--font-sans);
+		font-size: 24px;
+		font-weight: 400;
+		white-space: normal;
+	}
+}
+
+@media (max-width: 480px) {
+	.site-header {
+		gap: 12px;
+		padding-block: 12px;
+	}
+
+	.site-nav {
+		column-gap: 18px;
+		font-size: 15px;
+	}
+}

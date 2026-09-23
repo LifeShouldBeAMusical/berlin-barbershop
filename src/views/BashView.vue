@@ -15,11 +15,3 @@ const { t, tm } = useI18n()
 		</p>
 	</div>
 </template>
-
-<style lang="scss">
-#bash-view {
-	h1 {
-		text-align: center;
-	}
-}
-</style>

@@ -10,12 +10,25 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import 'vuetify/styles'
+import '@/styles/main.scss'
 
 const vuetify = createVuetify({
 	components,
 	directives,
-	defaults: {
-		// global: { FontFace: 'Sofia Sans' }
+	theme: {
+		defaultTheme: 'berlin',
+		themes: {
+			berlin: {
+				dark: true,
+				colors: {
+					background: '#1C1C1C',
+					surface: '#1C1C1C',
+					'on-background': '#FFFFFF',
+					'on-surface': '#FFFFFF',
+					primary: '#FFFFFF',
+				},
+			},
+		},
 	},
 	icons: { defaultSet: 'mdi', aliases, sets: { mdi } },
 	blueprint: md2,

@@ -5,14 +5,10 @@ import MenuBar from '@/component/MenuBar.vue'
 <template>
 	<v-app>
 		<menu-bar />
-		<v-container class="router">
-			<router-view />
-		</v-container>
+		<v-main>
+			<v-container class="page-container">
+				<router-view />
+			</v-container>
+		</v-main>
 	</v-app>
 </template>
-
-<style lang="scss">
-.router {
-	margin: 4em 0 0 0;
-}
-</style>
