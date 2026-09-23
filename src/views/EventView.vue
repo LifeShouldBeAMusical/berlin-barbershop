@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import EventCard from '@/component/EventCard.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
 	<div id="event-view">
-		<h1>Upcoming Events</h1>
+		<h1>{{ t('event.title') }}</h1>
 		<v-container class="event-container">
-			<event-card title="Berlin Barbershop Bash 2027" />
+			<event-card :title="t('event.bbb2027.title')" />
 		</v-container>
 	</div>
 </template>

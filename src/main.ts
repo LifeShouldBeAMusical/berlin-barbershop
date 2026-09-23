@@ -25,9 +25,21 @@ const vuetify = createVuetify({
 	blueprint: md2,
 })
 
+// Translation
+import en from '@/locale/en.json'
+import { createI18n } from 'vue-i18n'
+
+const i18n = createI18n({
+	legacy: false, // you must set `false`, to use Composition API
+	locale: 'en',
+	fallbackLocale: 'en',
+	messages: { en },
+})
+
 const app = createApp(App)
 
 app.use(vuetify)
+app.use(i18n)
 app.use(router)
 
 app.mount('#app')

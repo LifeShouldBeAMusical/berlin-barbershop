@@ -1,15 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
 
 <template>
 	<div id="chorus-view">
-		<h1>Choruses</h1>
+		<h1>{{ t('chorus.title') }}</h1>
 		<v-container class="chorus-container">
-			<h2>Capitol Chords</h2>
-			<p>Lorem Ipsum</p>
+			<h2>{{ t('chorus.capitol.title') }}</h2>
+			<p v-for="(spiel, idx) in tm('chorus.capitol.spiel')" :key="idx">{{ spiel }}</p>
 		</v-container>
 		<v-container class="chorus-container">
-			<h2>Women in Black</h2>
-			<p>Lorem Ipsum</p>
+			<h2>{{ t('chorus.wibs.title') }}</h2>
+			<p v-for="(spiel, idx) in tm('chorus.wibs.spiel')" :key="idx">{{ spiel }}</p>
 		</v-container>
 	</div>
 </template>
