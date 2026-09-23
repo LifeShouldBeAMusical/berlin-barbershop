@@ -10,6 +10,9 @@ const { t, tm } = useI18n()
 		<v-container class="chorus-container">
 			<h2>{{ t('chorus.capitol.title') }}</h2>
 			<p v-for="(spiel, idx) in tm('chorus.capitol.spiel')" :key="idx">{{ spiel }}</p>
+			<p>
+				<a href="https://capitalchords.de/" target="_blank">{{ t('chorus.capitol.join') }}</a>
+			</p>
 		</v-container>
 		<v-container class="chorus-container">
 			<h2>{{ t('chorus.wibs.title') }}</h2>
