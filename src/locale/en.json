@@ -20,7 +20,11 @@
 		"menu": "Choruses",
 		"capitol": {
 			"title": "Capitol Chords",
-			"spiel": ["Lorem Ipsum"]
+			"spiel": [
+				"We're the Capital Chords, a mixed Barbershop Choir from Berlin, Germany.",
+				"If Barbershop is more than a haircut to you, come join us and let's ring some chords. We are harmonizing through the enchanting world of Barbershop acapella music with its tight chords and timeless tunes.",
+				"For those curious and eager to take their first steps in singing and explore their vocal talents, we also host an open singing session called “Tag Along“. It's an opportunity for anyone to drop in, try their hand at singing Barbershop Harmony and become part of a relaxed musical atmosphere."
+			]
 		},
 		"wibs": {
 			"title": "Women in Black",
