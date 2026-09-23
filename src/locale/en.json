@@ -10,5 +10,17 @@
 		],
 		"interest_form": "Interest Form",
 		"newsletter": "Newsletter"
+	},
+	"chorus": {
+		"title": "Choruses",
+		"menu": "Choruses",
+		"capitol": {
+			"title": "Capitol Chords",
+			"spiel": ["Lorem Ipsum"]
+		},
+		"wibs": {
+			"title": "Women in Black",
+			"spiel": ["Lorem Ipsum"]
+		}
 	}
 }
