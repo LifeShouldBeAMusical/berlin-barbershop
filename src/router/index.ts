@@ -19,6 +19,10 @@ const router = createRouter({
 			path: '/bash',
 			component: () => import('../views/BashView.vue'),
 		},
+		{
+			path: '/hair',
+			component: () => import('../views/HairView.vue'),
+		},
 	],
 })
 
