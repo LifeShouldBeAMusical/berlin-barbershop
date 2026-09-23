@@ -17,11 +17,3 @@ const { t, tm } = useI18n()
 		</v-container>
 	</div>
 </template>
-
-<style lang="scss">
-#chorus-view {
-	h1 {
-		text-align: center;
-	}
-}
-</style>

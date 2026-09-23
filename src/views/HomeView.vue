@@ -10,11 +10,3 @@ const { t, tm } = useI18n()
 		<p v-for="(spiel, idx) in tm('home.spiel')" :key="idx">{{ spiel }}</p>
 	</div>
 </template>
-
-<style lang="scss">
-#home-view {
-	h1 {
-		text-align: center;
-	}
-}
-</style>
