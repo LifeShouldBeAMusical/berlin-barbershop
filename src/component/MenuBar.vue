@@ -10,7 +10,7 @@ const { t } = useI18n()
 			<v-btn href="/">Home</v-btn>
 			<v-btn href="/bash">{{ t('bash.menu') }}</v-btn>
 			<v-btn href="/chorus">{{ t('chorus.menu') }}</v-btn>
-			<v-btn href="/event">Events</v-btn>
+			<v-btn href="/event">{{ t('event.menu') }}</v-btn>
 		</v-toolbar-title>
 	</v-app-bar>
 </template>
