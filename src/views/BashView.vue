@@ -1,25 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
 
 <template>
 	<div id="bash-view">
-		<h1>Berlin Barbershop Bash 2027</h1>
+		<h1>{{ t('bash.title') }}</h1>
+		<p v-for="(spiel, idx) in tm('bash.spiel')" :key="idx">{{ spiel }}</p>
 		<p>
-			After the success of the first Berlin Barbershop Bash, we will be holding a second in 2027!
-		</p>
-		<p>
-			We will test out a 48-hour format in 2027, and look forward to seeing how the longer deadline
-			shapes the event.
-		</p>
-		<p>
-			If you're interested in joining us, please fill out our interest form and sign up for our
-			newsletter below!
-		</p>
-		<p>
-			<a>Interest Form</a>
+			<a>{{ t('bash.interest_form') }}</a>
 			<br />
-			<a>Newsletter</a>
+			<a>{{ t('bash.newsletter') }}</a>
 		</p>
-		<p>We appreciate your patience as we work to plan this event.</p>
 	</div>
 </template>
 
