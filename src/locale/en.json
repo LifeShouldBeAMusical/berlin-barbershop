@@ -29,5 +29,10 @@
 		"bbb2027": {
 			"title": "Berlin Barbershop Bash 2027"
 		}
+	},
+	"home": {
+		"title": "Berlin Barbershop",
+		"menu": "Home",
+		"spiel": ["Welcome, dear barbershopper, to Berlin!"]
 	}
 }
