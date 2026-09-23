@@ -1,4 +1,7 @@
 {
+	"locale": {
+		"lang_en": "EN"
+	},
 	"bash": {
 		"title": "Berlin Barbershop Bash 2027",
 		"menu": "BBB 2027",
